@@ -1,0 +1,15 @@
+package inheritance;
+
+public class child extends kid{
+	
+	int gradeLevel;
+
+	child(String Name, String Sex, int Age, String favorite_game, int grade_level) {
+		super(Name, Sex, Age, favorite_game);	
+		this.gradeLevel = grade_level;
+	}
+	
+	void showgradeLevel() {
+		System.out.println("Grade Level: " + gradeLevel);
+	}
+}
