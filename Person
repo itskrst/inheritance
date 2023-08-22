@@ -1,0 +1,38 @@
+package inheritance;
+
+public class Person {
+
+	String name, sex;
+	int age;
+	
+	void Person3(){
+		
+	}
+	
+	Person(String Name, String Sex, int Age){ //p
+		this.name = Name;
+		this.sex = Sex;
+		this.age = Age;
+	}
+	
+	public Person() { //p1
+		name = "n/a";
+		sex = "n/a";
+		age = 0;
+	}
+	
+	void Person1(String nAme, String SEx, int agE) { //p2
+		this.name = nAme;
+		this.sex = SEx;
+		this.age = agE;
+		
+	}
+
+	void checkStatus() {
+		System.out.println("Name: " + name);
+		System.out.println("Sex: " + sex);
+		System.out.println("Age: " + age);
+
+
+	}
+}
