@@ -1,0 +1,46 @@
+package inheritance;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Person p = new Person("Alexandria", "Lady", 20);
+		Person p1 = new Person(); //default
+		Person p2 = new Person();
+		kid k = new kid("Spade", "Boy", 21, "Program");
+		child c = new child("Renneisme", "F", 17, "Archery", 5);
+		
+		/* Polymorphism:
+		 * 
+		 	Person p = new Person("Alexandria", "Lady", 20);
+		 	Person k = new kid("Spade", "Boy", 21, "Program");
+			Person c = new child("Renneisme", "F", 17, "Archery", 5);
+
+		 */
+		
+		p2.name = "Kirsten";
+		p2.sex = "Female";
+		p2.age = 19;
+		
+		k.name = "Hailey";
+		k.sex = "Girl";
+		k.age = 18;
+		
+		//p.checkStatus();
+		
+		//System.out.println(p);
+		
+		//k.checkStatus();
+		
+		//k.drink();
+		
+		//System.out.println(p.name);
+	
+		//p2.checkStatus();
+		
+		c.checkStatus();
+		c.showgradeLevel();
+		
+	}
+
+}
